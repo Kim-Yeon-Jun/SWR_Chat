@@ -68,7 +68,7 @@ async def chat_page():
                 event.preventDefault();
                 const room_id = document.getElementById('room-id').value;
                 const client_id = document.getElementById('client-id').value;
-                ws = new WebSocket(`ws://port-0-swr-chat-754g42aluggnzy1.sel5.cloudtype.app/chat/${room_id}/${client_id}`);
+                ws = new WebSocket(`wss://port-0-swr-chat-754g42aluggnzy1.sel5.cloudtype.app/chat/${room_id}/${client_id}`);
 
                 ws.onopen = function() {
                     chatBox.style.display = 'block';
