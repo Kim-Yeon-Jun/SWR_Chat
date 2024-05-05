@@ -2,7 +2,6 @@ from fastapi import FastAPI, File, UploadFile, WebSocket, WebSocketDisconnect
 from typing import Dict
 from fastapi.responses import HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
-from easyocr import Reader
 from io import BytesIO
 from PIL import Image
 
